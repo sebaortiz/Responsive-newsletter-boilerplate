@@ -37,6 +37,10 @@
 			margin: 0 auto;
 		}
 		
+		a img {
+			border: 0;
+		}
+		
 		.read-more a,
 		.read-more a:visited,
 		.read-more a:active {
@@ -60,44 +64,52 @@
 			width: 100%;
 		}
 		
+		/* General */
+		.column td {
+			background: #ffffff;
+			color: #000000;
+		}
+		
+		.column h2 a,
+		.column h2 a:active,
+		.column h2 a:visited,
+		.column h2 a:hover {
+			color: #000000;
+			text-decoration: none;
+		}
+		
 		/* One column */
-		.one-column h2 {
+		.column.one h2 {
 			font-size: 1.8em;
 			padding: 10px 0 10px 0;
 		}
 		
-		.one-column td {
-			background: #ffffff;
+		.column.one.image img {
+			width: 40%;
 		}
 		
-		.one-column.image-left img {
+		.column.one.left img {
 			float: left;
-			width: 40%;
 			padding: 0 20px 0 0;
 		}
 		
-		.one-column.image-right img {
+		.column.one.right img {
 			float: right;
-			width: 40%;
 			padding: 0 0 0 20px;
 		}	
 		
-		.one-column.image-left h2,
-		.one-column.image-right h2 {
+		.column.one.left h2,
+		.column.one.right h2 {
 			margin: -10px 0 0 0;
 		}
 		
 		/* Two column */
-		.two-column {
+		.column.two {
 			width: 50%;
 			float: left;
 		}
 		
-		.two-column td {
-			background: #ffffff;
-		}
-		
-		.two-column h2 {
+		.column.two h2 {
 			margin: 10px 0 10px 0;
 		}
 		
@@ -212,13 +224,12 @@
 			}
 			
 			/* Change columns to fit mobile */			
-			.one-column.image-left img,
-			.one-column.image-right img {
+			.column.one.image img {
 				width: 100%;
 				margin: 0 0 15px 0;
 			}
 			
-			.two-column {
+			.column.two {
 				width: 100%;
 			}
 			
@@ -251,11 +262,11 @@
 						<td><h1>LOGO</h1></td>
 					</tr>
 				</table>
-				<table class="one-column" width="100%" cellpadding="20">
+				<table class="column one" width="100%" cellpadding="20">
 					<tr>
 						<td valign="top">
-							<img src="http://dummyimage.com/540x250/ff0000/fff.png" alt="" />
-							<h2>Pellentesque id ante in magna elementum elementum quis et massa.</h2>
+							<a href="" title=""><img src="http://dummyimage.com/540x250/ff0000/fff.png" alt="" /></a>
+							<h2><a href="" title="">Pellentesque id ante in magna elementum elementum quis et massa.</a></h2>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 							<span class="read-more"><a href="" title="Read more">Read more</a></span>
 						</td>
@@ -268,32 +279,32 @@
 						</td>
 					</tr>
 				</table>
-				<table class="one-column image-left" width="100%" cellpadding="20">
+				<table class="column one image left" width="100%" cellpadding="20">
 					<tr>
 						<td valign="top">
-							<img src="http://dummyimage.com/200x150/000000/fff.png" alt="" />
-							<h2>Pellentesque id ante in magna elementum elementum quis et massa.</h2>
+							<a href="" title=""><img src="http://dummyimage.com/200x150/000000/fff.png" alt="" /></a>
+							<h2><a href="" title="">Pellentesque id ante in magna elementum elementum quis et massa.</a></h2>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 							<span class="read-more"><a href="" title="Read more">Read more</a></span>
 						</td>
 					</tr>
 				</table>
-				<table class="one-column image-right" width="100%" cellpadding="20">
+				<table class="column one image right" width="100%" cellpadding="20">
 					<tr>
 						<td valign="top">
-							<img src="http://dummyimage.com/200x150/000000/fff.png" alt="" />
-							<h2>Pellentesque id ante in magna elementum elementum quis et massa.</h2>
+							<a href="" title=""><img src="http://dummyimage.com/200x150/000000/fff.png" alt="" /></a>
+							<h2><a href="" title="">Pellentesque id ante in magna elementum elementum quis et massa.</a></h2>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 							<span class="read-more"><a href="" title="Read more">Read more</a></span>
 						</td>
 					</tr>
 				</table>
 
-				<table class="one-column" width="100%" cellpadding="20">
+				<table class="column one" width="100%" cellpadding="20">
 					<tr>
 						<td valign="top">
-							<img src="http://dummyimage.com/540x250/ff0000/fff.png" alt="" />
-							<h2>Pellentesque id ante in magna elementum elementum quis et massa.</h2>
+							<a href="" title=""><img src="http://dummyimage.com/540x250/ff0000/fff.png" alt="" /></a>
+							<h2><a href="" title="">Pellentesque id ante in magna elementum elementum quis et massa.</a></h2>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 							<span class="read-more"><a href="" title="Read more">Read more</a></span>
 						</td>
@@ -306,21 +317,21 @@
 						</td>
 					</tr>
 				</table>
-				<table class="two-column" width="100%" cellpadding="20">
+				<table class="column two" width="100%" cellpadding="20">
 					<tr>
 						<td valign="top">
-							<img src="http://dummyimage.com/250x150/003cff/fff.png" alt="" />
-							<h2>Pellentesque id ante in magna elementum elementum quis et massa.</h2>
+							<a href="" title=""><img src="http://dummyimage.com/250x150/003cff/fff.png" alt="" /></a>
+							<h2><a href="" title="">Pellentesque id ante in magna elementum elementum quis et massa.</a></h2>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 							<span class="read-more"><a href="" title="Read more">Read more</a></span>
 						</td>
 					</tr>
 				</table>
-				<table class="two-column" width="100%" cellpadding="20">
+				<table class="column two" width="100%" cellpadding="20">
 					<tr>
 						<td valign="top">
-							<img src="http://dummyimage.com/250x150/003cff/fff.png" alt="" />
-							<h2>Pellentesque id ante in magna elementum elementum quis et massa.</h2>
+							<a href="" title=""><img src="http://dummyimage.com/250x150/003cff/fff.png" alt="" /></a>
+							<h2><a href="" title="">Pellentesque id ante in magna elementum elementum quis et massa.</a></h2>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 							<span class="read-more"><a href="" title="Read more">Read more</a></span>
 						</td>
