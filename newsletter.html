@@ -136,23 +136,23 @@
 			font-size: 0.8em;
 		}
 		
-		.footer-left {
+		.footer.left {
 			width: 35%;
 			float: left;
 			font-size: 0.9em;
 			margin: 0;
 		}
 		
-		.footer-left ul {
+		.footer.left ul {
 			width: 80%;
 			list-style: none;
 			margin: 0;
 			padding: 10px 0 0 0;
 		}
 		
-		.footer-left ul li a,
-		.footer-left ul li a:active,
-		.footer-left ul li a:visited {
+		.footer.left ul li a,
+		.footer.left ul li a:active,
+		.footer.left ul li a:visited {
 			background: #fff;
 			color: #666 !important;
 			margin: 10px 0 0 0;
@@ -164,30 +164,30 @@
 			display: block;
 		}
 		
-		.footer-left ul li a:hover {
+		.footer.left ul li a:hover {
 			background: #efefef;
 		}
 		
-		.footer-right {
+		.footer.right {
 			width: 65%;
 			float: left;
 			font-size: 0.9em;
 			margin: 0;
 		}
 		
-		.footer-right ul {
+		.footer.right ul {
 			list-style: none;
 			margin: 0;
 			padding: 10px 0 0 0;
 		}
 	
-		.footer-right ul li a,
-		.footer-right ul li a:active,
-		.footer-right ul li a:visited {
+		.footer.right ul li a,
+		.footer.right ul li a:active,
+		.footer.right ul li a:visited {
 			background: #111;
 			color: #ffffff !important;
 			margin: 10px 0 0 0;
-			padding: 4px 0 4px 10px;
+			padding: 4px 10px;
 			border-radius: 6px;
 			-webkit-border-radius: 6px;
 			-moz-border-radius: 6px;
@@ -195,7 +195,7 @@
 			display: block;
 		}
 		
-		.footer-right ul li a:hover {
+		.footer.right ul li a:hover {
 			background: #ff0000;
 		}
 			
@@ -237,10 +237,9 @@
 				font-size: 0.8em;
 			}
 			
-			.footer-left,
-			.footer-left ul,
-			.footer-right {
-				width: 100%;
+			.footer,
+			.footer ul {
+				width: 100% !important;
 				font-size: 1em;
 			}
 		}
@@ -342,7 +341,7 @@
 						<td>
 							<p>A newsletter from <a href="http://yourcompany.com" title="Your company">Your company</a>, Box 12345, 123 45 Stockholm.<br /><br />This material is protected by Copyright &copy;.
 							</p>
-							<table class="footer-left">
+							<table class="footer left">
 								<tr>
 									<td>
 										<ul>
@@ -354,7 +353,7 @@
 									</td>
 								</tr>
 							</table>
-							<table class="footer-right">
+							<table class="footer right">
 								<tr>
 									<td>
 										<ul>
